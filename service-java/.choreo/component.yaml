@@ -1,0 +1,12 @@
+schemaVersion: "1.1"
+endpoints:
+    - name: reservation-core-services
+      displayName: Spring Service Reservation
+      service:
+        basePath: /reservations
+        port: 8080
+      type: REST
+      networkVisibilities:
+        - Project
+        - Public
+      schemaFilePath: src/main/resources/openapi.yaml

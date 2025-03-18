@@ -1,0 +1,11 @@
+schemaVersion: "1.1"
+endpoints:
+    - name: rooms-bff-graphql-service-aaa
+      displayName: Rooms BfF GraphQL Service
+      service:
+        basePath: /
+        port: 9090
+      type: GraphQL
+      networkVisibilities:
+        - Project
+        - Public
